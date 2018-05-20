@@ -30,8 +30,10 @@ public class Rotation2 : MonoBehaviour
  
     void Update()
     {
-        while (rot == true)
-            transform.Rotate(0, 2, 0);
+        if (rot == true)
+            transform.Rotate(0, 20, 0);
+        if (rot == false)
+         transform.Rotate(0, 0, 0);
         
     }
 }
